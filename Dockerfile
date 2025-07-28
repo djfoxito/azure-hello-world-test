@@ -3,6 +3,8 @@ FROM python:3.11-slim-buster
 
 WORKDIR /app
 
+RUN pip install Flask
+
 COPY app.py .
 
 # No crear usuario, no instalar nada. Solo lo minimo para ver si falla.
